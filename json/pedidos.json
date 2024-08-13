@@ -18,7 +18,7 @@
                 "precio": 3000
             }
         ],
-        "estado": "creado",
+        "estado": "preparacion",
         "estado_pago": "pagado"
     },
     {
@@ -40,7 +40,7 @@
                 "precio": 5000
             }
         ],
-        "estado": "preparacion",
+        "estado": "servido",
         "estado_pago": "no pagado"
     },
     {
@@ -123,7 +123,7 @@
                 "precio": 3000
             }
         ],
-        "estado": "creado",
+        "estado": "servido",
         "estado_pago": "no pagado"
     },
     {

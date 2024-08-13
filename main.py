@@ -139,8 +139,9 @@ while bol==True:#se usa un bucle while con el fin de que cada vez que se termine
         print("-------------- Pedidos no pagados --------------")
         for i in pedidos:
             contPedido+=1
-            if i["estado_pago"]=="no pagado":
+            if i["estado_pago"]=="no pagado":#se usa un bucle for para mirar el json de pedidos y mirar todos los que no esten pagados y mostrarlos con su id en es la posicion en el json
                 print("ID del pedido:",contPedido,"Dueño del pedido:",i["cliente"])
+
        #en la siguiente seccion se usa un buclle while y un try except para evitar cualquier error al momento de pedir un numero y tambien se usa un bucle while para que el numero ingresado no sea diferente de los que aparecen en pantalla
         bolInt=True
         while bolInt==True:
@@ -152,11 +153,60 @@ while bol==True:#se usa un bucle while con el fin de que cada vez que se termine
             except ValueError:
                 print("Ingrese una opcion valida (Numero)")
         #----------------------------------------------------------------------------------------------------
-        pedidos[idPedido-1]["estado_pago"]="pagado"
+        pedidos[idPedido-1]["estado_pago"]="pagado"#sabiendo la posicion del pedido que se va a pagar se busca en el json ese pedido y se cambia su estado de no pagado a pagado
 
         input("Pedido pagado con exito ╰(*°▽°*)╯\nPreciona (Enter) para continuar")
     elif opcion==3:
-        ""
+        contCambiop=0
+        #en la siguiente seccion se usa un buclle while y un try except para evitar cualquier error al momento de pedir un numero y tambien se usa un bucle while para que el numero ingresado no sea diferente de los que aparecen en pantalla
+        bolInt=True
+        while bolInt==True:
+            try:
+                opcion3=int(input("1. Pasar pedido de creado a preparacion\n2. pasar pedido de preparacion a servido\nIngresa tu opcion: "))
+                while opcion3<1 or opcion3>2:
+                    opcion3=int(input("Ingrese una opcion de las que aparecen en pantalla: "))
+                bolInt=False
+            except ValueError:
+                print("Ingrese una opcion valida (Numero)")
+        #----------------------------------------------------------------------------------------------------
+        if opcion3==1:
+            print("==========Pedidos en estado 'creado'==========")
+            for i in pedidos:
+                contCambiop+=1
+                if i["estado"]=="creado":#se usa un bucle for para mirar todos los productos que tienen estado de creado
+                    print("ID del pedido:",contCambiop,"\nDueño del pedido:",i["cliente"],"\n-----------------------------------------------")
+            #en la siguiente seccion se usa un buclle while y un try except para evitar cualquier error al momento de pedir un numero y tambien se usa un bucle while para que el numero ingresado no sea diferente de los que aparecen en pantalla
+            bolInt=True
+            while bolInt==True:
+                try:
+                    cambioCtoP=int(input("Ingresa el id del pedido que va a cambiar de estado: "))
+                    while cambioCtoP<1 or cambioCtoP>contCambiop:
+                        cambioCtoP=int(input("Ingrese un id de los que aparecen en pantalla: "))
+                    bolInt=False
+                except ValueError:
+                    print("Ingrese una opcion valida (Numero)")
+            #----------------------------------------------------------------------------------------------------
+            pedidos[cambioCtoP-1]["estado"]="preparacion"#sabiendo la posicion del pedido al que se le cambiara el estado se busca en el json y se le cambia el estado
+        contCambiop=0
+        if opcion3==2:
+            print("==========Pedidos en estado 'preparacion'==========")
+            for i in pedidos:
+                contCambiop+=1
+                if i["estado"]=="preparacion":#se usa un bucle for para mirar todos los productos que tienen estado de preparacion
+                    print("ID del pedido:",contCambiop,"\nDueño del pedido:",i["cliente"],"\n-----------------------------------------------")
+            #en la siguiente seccion se usa un buclle while y un try except para evitar cualquier error al momento de pedir un numero y tambien se usa un bucle while para que el numero ingresado no sea diferente de los que aparecen en pantalla
+            bolInt=True
+            while bolInt==True:
+                try:
+                    cambioCtoP=int(input("Ingresa el id del pedido que va a cambiar de estado: "))
+                    while cambioCtoP<1 or cambioCtoP>contCambiop:
+                        cambioCtoP=int(input("Ingrese un id de los que aparecen en pantalla: "))
+                    bolInt=False
+                except ValueError:
+                    print("Ingrese una opcion valida (Numero)")
+            #----------------------------------------------------------------------------------------------------
+            pedidos[cambioCtoP-1]["estado"]="servido"#sabiendo la posicion del pedido al que se le cambiara el estado se busca en el json y se le cambia el estado
+
     elif opcion==4:
         ""
     elif opcion==5:
