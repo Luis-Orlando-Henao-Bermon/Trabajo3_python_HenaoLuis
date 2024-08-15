@@ -174,4 +174,4 @@ with open("./json/pagos.json","w") as file:
     file.write(jsonpagos)
 jsonmenu=json.dumps(menu)
 with open("./json/menu.json","w") as file:
-    file.write(jsonmenu)
+    file.write(jsonmenu) 
