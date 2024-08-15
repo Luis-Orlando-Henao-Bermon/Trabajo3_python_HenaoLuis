@@ -409,12 +409,12 @@ while bol==True:#se usa un bucle while con el fin de que cada vez que se termine
         bol=False
     
 #seccion de exportacion de jsons
-jsonpedidos=json.dumps(pedidos)
+jsonpedidos=json.dumps(pedidos,indent=4)
 with open("./json/pedidos.json","w") as file:
     file.write(jsonpedidos)
-jsonpagos=json.dumps(pagos)
+jsonpagos=json.dumps(pagos,indent=4)
 with open("./json/pagos.json","w") as file:
     file.write(jsonpagos)
-jsonmenu=json.dumps(menu)
+jsonmenu=json.dumps(menu,indent=4)
 with open("./json/menu.json","w") as file:
     file.write(jsonmenu)

@@ -1,1 +1,80 @@
-[{"id": 1, "categoria": "entrada", "nombre": "Empanadas Mini", "precio": 9000}, {"id": 2, "categoria": "entrada", "nombre": "Papas Fritas", "precio": 5000}, {"id": 3, "categoria": "entrada", "nombre": "Dedos de Queso", "precio": 11000}, {"id": 4, "categoria": "entrada", "nombre": "Tostada Francesa", "precio": 10000}, {"id": 1, "categoria": "plato_fuerte", "nombre": "Pasta Bolognesa", "precio": 35000}, {"id": 2, "categoria": "plato_fuerte", "nombre": "Hamburguesa", "precio": 28000}, {"id": 3, "categoria": "plato_fuerte", "nombre": "Pollo al Curry", "precio": 30000}, {"id": 4, "categoria": "plato_fuerte", "nombre": "Lechona", "precio": 25000}, {"id": 5, "categoria": "plato_fuerte", "nombre": "Arroz al Wok", "precio": 20000}, {"id": 1, "categoria": "bebida", "nombre": "Coca-Cola", "precio": 3000}, {"id": 2, "categoria": "bebida", "nombre": "Jugo Natural", "precio": 5000}, {"id": 3, "categoria": "bebida", "nombre": "Vino", "precio": 8000}, {"id": 4, "categoria": "bebida", "nombre": "Cerveza", "precio": 3500}]
+[
+    {
+        "id": 1,
+        "categoria": "entrada",
+        "nombre": "Empanadas Mini",
+        "precio": 9000
+    },
+    {
+        "id": 2,
+        "categoria": "entrada",
+        "nombre": "Papas Fritas",
+        "precio": 5000
+    },
+    {
+        "id": 3,
+        "categoria": "entrada",
+        "nombre": "Dedos de Queso",
+        "precio": 11000
+    },
+    {
+        "id": 4,
+        "categoria": "entrada",
+        "nombre": "Tostada Francesa",
+        "precio": 10000
+    },
+    {
+        "id": 1,
+        "categoria": "plato_fuerte",
+        "nombre": "Pasta Bolognesa",
+        "precio": 35000
+    },
+    {
+        "id": 2,
+        "categoria": "plato_fuerte",
+        "nombre": "Hamburguesa",
+        "precio": 28000
+    },
+    {
+        "id": 3,
+        "categoria": "plato_fuerte",
+        "nombre": "Pollo al Curry",
+        "precio": 30000
+    },
+    {
+        "id": 4,
+        "categoria": "plato_fuerte",
+        "nombre": "Lechona",
+        "precio": 25000
+    },
+    {
+        "id": 5,
+        "categoria": "plato_fuerte",
+        "nombre": "Arroz al Wok",
+        "precio": 20000
+    },
+    {
+        "id": 1,
+        "categoria": "bebida",
+        "nombre": "Coca-Cola",
+        "precio": 3000
+    },
+    {
+        "id": 2,
+        "categoria": "bebida",
+        "nombre": "Jugo Natural",
+        "precio": 5000
+    },
+    {
+        "id": 3,
+        "categoria": "bebida",
+        "nombre": "Vino",
+        "precio": 8000
+    },
+    {
+        "id": 4,
+        "categoria": "bebida",
+        "nombre": "Cerveza",
+        "precio": 3500
+    }
+]
