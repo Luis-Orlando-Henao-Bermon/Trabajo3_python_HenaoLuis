@@ -156,6 +156,7 @@ while bol==True:#se usa un bucle while con el fin de que cada vez que se termine
         fechaPago=str(datetime.today())
         pedidos[idPedido-1]["estado_pago"]="pagado"#sabiendo la posicion del pedido que se va a pagar se busca en el json ese pedido y se cambia su estado de no pagado a pagado
         pedidos[idPedido-1]["fecha_pago"]=fechaPago#sabiendo la posicion del pedido que se va a pagar se busca en el json ese pedido y se cambia su estado de no pagado a pagado
+        pagos.append({"cliente":pedidos[idPedido-1]["cliente"],"total":pedidos[idPedido-1]["total"],"fecha_pago":pedidos[idPedido-1]["fecha_pago"]})
         
         input("Pedido pagado con exito ╰(*°▽°*)╯\nPreciona (Enter) para continuar")
     elif opcion==3:
