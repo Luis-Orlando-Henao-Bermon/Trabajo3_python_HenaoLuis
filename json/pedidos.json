@@ -20,6 +20,7 @@
         ],
         "estado": "servido",
         "estado_pago": "pagado",
+        "total": 47000,
         "fecha_pago": "2024-08-14 20:21:23.423499"
     },
     {
@@ -42,7 +43,8 @@
             }
         ],
         "estado": "preparacion",
-        "estado_pago": "no pagado"
+        "estado_pago": "no pagado",
+        "total": 38000
     },
     {
         "cliente": "Carlos Gomez",
@@ -64,7 +66,8 @@
             }
         ],
         "estado": "creado",
-        "estado_pago": "no pagado"
+        "estado_pago": "no pagado",
+        "total": 49000
     },
     {
         "cliente": "Ana Martinez",
@@ -86,7 +89,8 @@
             }
         ],
         "estado": "creado",
-        "estado_pago": "no pagado"
+        "estado_pago": "no pagado",
+        "total": 37500
     },
     {
         "cliente": "Andres Gomez",
@@ -108,7 +112,8 @@
             }
         ],
         "estado": "cancelado",
-        "estado_pago": "no pagado"
+        "estado_pago": "no pagado",
+        "total": 41000
     },
     {
         "cliente": "Luis Henao",
@@ -136,6 +141,7 @@
         ],
         "estado": "servido",
         "estado_pago": "pagado",
+        "total": 58000,
         "fecha_pago": "2024-08-14 20:20:20.031476"
     },
     {
@@ -153,6 +159,32 @@
             }
         ],
         "estado": "creado",
-        "estado_pago": "no pagado"
+        "estado_pago": "pagado",
+        "total": 33000,
+        "fecha_pago": "2024-08-15 09:38:27.468327"
+    },
+    {
+        "cliente": "Jose Perez",
+        "items": [
+            {
+                "categoria": "entrada",
+                "nombre": "Papas Fritas",
+                "precio": 5000
+            },
+            {
+                "categoria": "plato_fuerte",
+                "nombre": "Arroz al Wok",
+                "precio": 20000
+            },
+            {
+                "categoria": "bebida",
+                "nombre": "Vino",
+                "precio": 8000
+            }
+        ],
+        "estado": "creado",
+        "estado_pago": "pagado",
+        "total": 33000,
+        "fecha_pago": "2024-08-15 09:40:01.660957"
     }
 ]
